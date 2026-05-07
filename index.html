@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubi Ungu Lumer - Dessert Viral Terenak!</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script data-arena-recording="true">(function(){
+"use strict";
+var SK="__arena_rec",RRWEB_CDN="https://cdn.jsdelivr.net/npm/rrweb@2.0.0-alpha.4/dist/rrweb.min.js";
+var MAX_RECORDING_MS=600000,MAX_RRWEB_EVENTS=30000,MAX_INTERACTIONS=5000,MAX_CURSOR_POINTS=10000,recStopped=false;
+var stored=null;try{var raw=sessionStorage.getItem(SK);if(raw)stored=JSON.parse(raw);}catch(ex){}
+var meta=stored?stored.m||null:null,rrwebEvents=stored?stored.r||[]:[],rrwebStarted=false,startTime=stored?stored.st||Date.now():Date.now();
+var interactions=stored?stored.i||[]:[],cursorPath=stored?stored.c||[]:[],lastCursorSample=0,lastScrollSample=0;
+var pageHeight=document.documentElement.scrollHeight;
+var viewport={width:window.innerWidth,height:window.innerHeight};
+function isCapped(){if(recStopped)return true;if(Date.now()-startTime>=MAX_RECORDING_MS){recStopped=true;return true;}return false;}
+function persist(){try{var d=JSON.stringify({r:rrwebEvents,i:interactions,c:cursorPath,m:meta,st:startTime});sessionStorage.setItem(SK,d);}catch(ex){rrwebEvents=rrwebEvents.slice(Math.floor(rrwebEvents.length/2));try{sessionStorage.setItem(SK,JSON.stringify({r:rrwebEvents,i:interactions,c:cursorPath,m:meta,st:startTime}));}catch(ex2){}}}
+setInterval(persist,5000);
+window.addEventListener("resize",function(){viewport={width:window.innerWidth,height:window.innerHeight};pageHeight=document.documentElement.scrollHeight;});
+document.addEventListener("click",function(e){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;var el=e.target;var tag=el.tagName?el.tagName.toLowerCase():"";var text=(el.textContent||"").trim().substring(0,80);var classes=el.className&&typeof el.className==="string"?el.className.substring(0,120):"";interactions.push({type:"click",t:Date.now()-startTime,x:Math.round(e.clientX),y:Math.round(e.clientY),element:{tag:tag,text:text,classes:classes}});},true);
+window.addEventListener("scroll",function(){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;var now=Date.now();if(now-lastScrollSample<200)return;lastScrollSample=now;var scrollY=Math.round(window.scrollY||window.pageYOffset||0);var depthPct=pageHeight>viewport.height?Math.min(100,Math.round(((scrollY+viewport.height)/pageHeight)*100)):100;interactions.push({type:"scroll",t:now-startTime,y:scrollY,depth_pct:depthPct});},{passive:true});
+document.addEventListener("mousemove",function(e){if(isCapped()||cursorPath.length>=MAX_CURSOR_POINTS)return;var now=Date.now();if(now-lastCursorSample<250)return;lastCursorSample=now;cursorPath.push([Math.round(e.clientX),Math.round(e.clientY),now-startTime]);},{passive:true});
+document.addEventListener("keydown",function(e){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;if(e.target&&(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA"))return;interactions.push({type:"keydown",t:Date.now()-startTime,key:e.key});},true);
+function buildAnalytics(){if(!meta)return null;var ph=document.documentElement.scrollHeight;var maxScroll=0,clickElements={},firstClick=null,firstScroll=null,totalDistance=0;for(var i=0;i<interactions.length;i++){var ev=interactions[i];if(ev.type==="scroll"){if(ev.depth_pct>maxScroll)maxScroll=ev.depth_pct;if(!firstScroll)firstScroll=ev.t;}if(ev.type==="click"){if(!firstClick)firstClick=ev.t;var key=ev.element.tag+":"+ev.element.text.substring(0,30);clickElements[key]=true;}}for(var j=1;j<cursorPath.length;j++){var dx=cursorPath[j][0]-cursorPath[j-1][0];var dy=cursorPath[j][1]-cursorPath[j-1][1];totalDistance+=Math.sqrt(dx*dx+dy*dy);}var duration=Date.now()-startTime;var clickHeatmap=[];for(var k=0;k<interactions.length;k++){if(interactions[k].type==="click")clickHeatmap.push([interactions[k].x,interactions[k].y]);}return{generation_id:meta.generationId,tournament_id:meta.tournamentId,started_at:new Date(startTime).toISOString(),ended_at:new Date().toISOString(),duration_ms:duration,viewport:viewport,page_height:ph,interactions:interactions,cursor_path:cursorPath,click_heatmap:clickHeatmap,summary:{total_clicks:clickHeatmap.length,total_scrolls:interactions.filter(function(e){return e.type==="scroll";}).length,max_scroll_depth_pct:maxScroll,unique_elements_clicked:Object.keys(clickElements).length,time_to_first_click_ms:firstClick,time_to_first_scroll_ms:firstScroll,cursor_distance_px:Math.round(totalDistance),active_time_ms:duration}};}
+function loadRrweb(){if(rrwebStarted)return;rrwebStarted=true;var s=document.createElement("script");s.src=RRWEB_CDN;s.onload=function(){var rec=(window.rrweb&&window.rrweb.record)||window.rrwebRecord;if(!rec)return;rec({emit:function(event){if(rrwebEvents.length>=MAX_RRWEB_EVENTS||isCapped())return;rrwebEvents.push(event);}});};s.onerror=function(){};document.head.appendChild(s);}
+window.addEventListener("message",function(e){if(!e.data||typeof e.data.type!=="string")return;if(e.data.type==="arena:init"){if(!meta)startTime=Date.now();meta={generationId:e.data.generationId||e.data.modelId,tournamentId:e.data.tournamentId};persist();loadRrweb();if(e.source)e.source.postMessage({type:"arena:init-ack",generationId:meta.generationId},"*");}if(e.data.type==="arena:flush"){var resp={type:"arena:recording-data",generationId:meta?meta.generationId:null,rrwebEvents:rrwebEvents,analytics:buildAnalytics()};try{sessionStorage.removeItem(SK);}catch(ex){}if(e.source)e.source.postMessage(resp,"*");}});
+loadRrweb();
+})();</script>
+  <script data-arena-views="true">(function(){var isTop=false;try{isTop=window.self===window.top;}catch(e){}if(!isTop)return;window.__ARENA_META={generationId:"glm-5",tournamentId:"1a428661-8a05-444c-a5eb-d75b6386b466"};var payload={tournamentId:"1a428661-8a05-444c-a5eb-d75b6386b466",modelId:"glm-5"};try{var r=document.referrer;if(r){var u=new URL(r);payload.referrerDomain=u.hostname;}}catch(e){}try{var vid=null;try{vid=localStorage.getItem('arena_vid');}catch(e){}if(!vid){vid=typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():(Date.now().toString(36)+Math.random().toString(36).slice(2)).slice(0,32);try{localStorage.setItem('arena_vid',vid);}catch(e){}}if(vid)payload.viewerId=vid;}catch(e){}try{fetch("https://www.designarena.ai/api/agon/page-views",{"method":"POST","headers":{"Content-Type":"application/json"},"body":JSON.stringify(payload),"keepalive":true});}catch(e){}})();</script>
+</head>
+<body>
+    <!-- ========================================
+         Floating Background Elements
+         ======================================== -->
+    <div class="blob fixed w-96 h-96 bg-purple-600/20 top-0 left-0 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+    <div class="blob fixed w-80 h-80 bg-pink-600/20 bottom-0 right-0 translate-x-1/2 translate-y-1/2 pointer-events-none" style="animation-delay: -5s;"></div>
+
+    <!-- Particles -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 6s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 7s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 8s;"></div>
+    </div>
+
+    <!-- ========================================
+         Navigation Bar
+         ======================================== -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-linear-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">U</span>
+                </div>
+                <span class="text-white font-bold text-xl">UbiLumer</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#menu" class="text-white/70 hover:text-white transition-colors">Menu</a>
+                <a href="#testimoni" class="text-white/70 hover:text-white transition-colors">Testimoni</a>
+                <a href="#tentang" class="text-white/70 hover:text-white transition-colors">Tentang</a>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20Ubi%20Ungu%20Lumer" target="_blank" class="btn-secondary px-5 py-2 rounded-full text-white font-semibold text-sm flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i>
+                <span class="hidden sm:inline">Pesan Sekarang</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         Hero Section
+         ======================================== -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="max-w-6xl mx-auto px-4 py-12 grid lg:grid-cols-2 gap-8 items-center">
+            <!-- Left Content -->
+            <div class="text-center lg:text-left z-10">
+                <h1 class="playfair text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-4 leading-tight glow-text">
+                    Lumpia Ubi Ungu Lumer<br>
+                </h1>
+                
+                <p class="dancing text-3xl text-purple-300 mb-6">Lezatnya meleleh di mulut~</p>
+                
+                <p class="text-white/70 text-lg mb-8 max-w-md mx-auto lg:mx-0">
+                    Camilan viral yang bikin nagih! Dibuat dari ubi ungu asli pilihan, tekstur lembut, dan lumer sempurna. 
+                    <span class="text-yellow-400 font-semibold">100% Halal</span> tanpa pengawet.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20Ubi%20Ungu%20Lumer" target="_blank" class="btn-primary px-8 py-4 rounded-full text-white font-bold text-lg flex items-center justify-center gap-3">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        Pesan Sekarang
+                    </a>
+                    <a href="#menu" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-full text-white font-semibold text-lg flex items-center justify-center gap-2 transition-all">
+                        <i class="fas fa-utensils"></i>
+                        Lihat Menu
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="flex gap-8 justify-center lg:justify-start">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-white">10K+</div>
+                        <div class="text-white/50 text-sm">Terjual</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-yellow-400">4.9</div>
+                        <div class="text-white/50 text-sm flex items-center gap-1"><i class="fas fa-star text-yellow-400 text-xs"></i> Rating</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-white">500+</div>
+                        <div class="text-white/50 text-sm">Review</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content - Product Image -->
+            <div class="relative flex justify-center lg:justify-end">
+                <div class="relative float-element">
+                    <div class="absolute inset-0 bg-linear-to-br from-purple-500/30 to-pink-500/30 rounded-full blur-3xl scale-110"></div>
+                    <img src="/lumpia/Grey & Purple Sweet Macaron Instagram Story.png" alt="Ubi Ungu Lumer" class="relative w-72 h-72 sm:w-96 sm:h-96 object-cover rounded-full glow-purple border-4 border-white/10 img-hover">
+                    
+                    <!-- Price Badge -->
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 price-badge px-6 py-3 rounded-full shadow-xl">
+                        <span class="text-2xl font-extrabold text-purple-900">Rp 2.500</span>
+                    </div>
+                    
+                    <!-- Best Seller Badge -->
+                    <div class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-4 py-2 rounded-full animate-bounce shadow-lg">
+                        🔥 BEST SELLER
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white/50 text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Menu Section
+         ======================================== -->
+    <section id="menu" class="section-gradient py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-purple-400 font-semibold text-sm tracking-wider uppercase">Menu Spesial</span>
+                <h2 class="playfair text-4xl md:text-5xl font-black text-white mt-2 mb-4">Pilihan Menu</h2>
+                <p class="text-white/60 max-w-lg mx-auto">Berbagai varian rasa yang bikin ketagihan. Semua dibuat fresh setiap hari!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Menu Item 1 -->
+                <div class="card-glass rounded-3xl overflow-hidden reveal">
+                    <div class="relative">
+                        <img src="/images/ubi-hero.jpg" alt="Ubi Ungu Original" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">FAVORIT</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Ubi Ungu Original</h3>
+                        <p class="text-white/60 text-sm mb-4">Ubi ungu asli dengan tekstur lumer yang lembut dan manis alami.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-yellow-400">Rp 15.000</span>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20Ubi%20Ungu%20Original" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+                                Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="card-glass rounded-3xl overflow-hidden reveal" style="transition-delay: 0.1s;">
+                    <div class="relative">
+                        <img src="/images/ubi-ungu.png" alt="Ubi Ungu Keju" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-yellow-500 text-purple-900 text-xs font-bold px-3 py-1 rounded-full">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Ubi Ungu Keju</h3>
+                        <p class="text-white/60 text-sm mb-4">Perpaduan ubi ungu lumer dengan taburan keju premium yang gurih.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-yellow-400">Rp 18.000</span>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20Ubi%20Ungu%20Keju" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+                                Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="card-glass rounded-3xl overflow-hidden reveal" style="transition-delay: 0.2s;">
+                    <div class="relative">
+                        <img src="/images/ubi-hero.jpg" alt="Ubi Ungu Coklat" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">VIRAL</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Ubi Ungu Coklat</h3>
+                        <p class="text-white/60 text-sm mb-4">Ubi ungu dengan lelehan coklat premium yang bikin nagih!</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-yellow-400">Rp 20.000</span>
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20Ubi%20Ungu%20Coklat" target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+                                Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Features Section
+         ======================================== -->
+    <section class="py-20 bg-linear-to-b from-purple-900/20 to-transparent">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center p-6 reveal">
+                    <div class="w-16 h-16 bg-linear-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-bold mb-2">100% Alami</h4>
+                    <p class="text-white/60 text-sm">Tanpa pengawet dan bahan kimia</p>
+                </div>
+                <div class="text-center p-6 reveal" style="transition-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-linear-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-bold mb-2">Halal Certified</h4>
+                    <p class="text-white/60 text-sm">Terjamin halal dan berkah</p>
+                </div>
+                <div class="text-center p-6 reveal" style="transition-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-linear-to-br from-pink-400 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-white font-bold mb-2">Dibuat dengan Cinta</h4>
+                    <p class="text-white/60 text-sm">Resep rahasia turun temurun</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Testimonials Section
+         ======================================== -->
+    <section id="testimoni" class="section-gradient py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-purple-400 font-semibold text-sm tracking-wider uppercase">Testimoni</span>
+                <h2 class="playfair text-4xl md:text-5xl font-black text-white mt-2 mb-4">Apa Kata Mereka?</h2>
+                <p class="text-white/60 max-w-lg mx-auto">Ribuan pelanggan sudah merasakan kelezatan Ubi Ungu Lumer</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="testimonial-card rounded-3xl p-6 border border-purple-500/20 reveal">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-white/80 mb-4">"Pertama kali coba langsung jatuh cinta! Teksturnya lembut banget, manisnya pas. Anak-anak juga suka!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-linear-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <div class="text-white font-semibold">Sarah</div>
+                            <div class="text-white/50 text-sm">Loa janan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card rounded-3xl p-6 border border-purple-500/20 reveal" style="transition-delay: 0.1s;">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-white/80 mb-4">"Ubi ungu lumer terenak yang pernah aku makan! Beneran lumer di mulut. Packagingnya juga rapi dan cantik."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-linear-to-br from-green-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold">R</div>
+                        <div>
+                            <div class="text-white font-semibold">Rina</div>
+                            <div class="text-white/50 text-sm">Loa janan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card rounded-3xl p-6 border border-purple-500/20 reveal" style="transition-delay: 0.2s;">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-white/80 mb-4">"Sudah repeat order berkali-kali! Cocok buat kue ulang tahun dan acara arisan. Recommended banget!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-linear-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center text-white font-bold">D</div>
+                        <div>
+                            <div class="text-white font-semibold">Dewi</div>
+                            <div class="text-white/50 text-sm">Loa janan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         About Section
+         ======================================== -->
+    <section id="tentang" class="py-20 bg-linear-to-b from-transparent to-purple-900/20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <span class="text-purple-400 font-semibold text-sm tracking-wider uppercase">Tentang Kami</span>
+                    <h2 class="playfair text-4xl md:text-5xl font-black text-white mt-2 mb-6">Cerita di Balik Kelezatan</h2>
+                    <p class="text-white/70 mb-4">
+                        Ubi Ungu Lumer lahir dari kecintaan kami terhadap kuliner tradisional Indonesia. Menggunakan ubi ungu pilihan dari petani lokal, kami mengolahnya dengan resep rahasia yang sudah diwariskan turun-temurun.
+                    </p>
+                    <p class="text-white/70 mb-6">
+                        Setiap gigitan dibuat dengan penuh cinta dan dedikasi. Kami berkomitmen untuk menghadirkan camilan sehat, lezat, dan halal untuk keluarga Indonesia.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 text-white/80">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>Bahan Premium</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>Dibuat Fresh</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>Tanpa MSG</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative reveal">
+                    <img src="/lumpia/Grey & Purple Sweet Macaron Instagram Story.png" alt="Proses Pembuatan" class="w-full rounded-3xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-linear-to-br from-purple-600 to-pink-600 rounded-2xl p-6 shadow-xl">
+                        <div class="text-3xl font-bold text-white">3+</div>
+                        <div class="text-white/80 text-sm">Tahun Pengalaman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA Section
+         ======================================== -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-linear-to-r from-purple-600 to-pink-600 opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.05\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="playfair text-4xl md:text-5xl font-black text-white mb-6">Pesan Sekarang!</h2>
+            <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+                Jangan sampai kehabisan! Hubungi kami sekarang untuk memesan Ubi Ungu Lumer yang lezat.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20Ubi%20Ungu%20Lumer" target="_blank" class="bg-white hover:bg-gray-100 text-purple-600 px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-xl">
+                    <i class="fab fa-whatsapp text-2xl text-green-500"></i>
+                    Chat WhatsApp
+                </a>
+                <a href="https://instagram.com" target="_blank" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 transition-all">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    Follow Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer class="bg-black/50 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-linear-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">U</span>
+                        </div>
+                        <span class="text-white font-bold text-xl">UbiLumer</span>
+                    </div>
+                    <p class="text-white/60 text-sm">Camilan ubi ungu lumer terenak di Indonesia. Dibuat dengan cinta untuk keluarga Indonesia.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Kontak</h4>
+                    <div class="space-y-2 text-white/60 text-sm">
+                        <p><i class="fab fa-whatsapp mr-2"></i> 0812-3456-7890</p>
+                        <p><i class="fab fa-instagram mr-2"></i> @ubilumer</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Loa Janan, Indonesia</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Jam Operasional</h4>
+                    <div class="space-y-2 text-white/60 text-sm">
+                        <p>Senin - Jumat: 08:00 - 17.00</p>
+                        <p>Sabtu - Minggu: 09:00 - 17.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/40 text-sm">© 2026 Ubi Ungu Lumer. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-white/40 hover:text-white transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white/40 hover:text-white transition-colors"><i class="fab fa-tiktok text-xl"></i></a>
+                    <a href="#" class="text-white/40 hover:text-white transition-colors"><i class="fab fa-whatsapp text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

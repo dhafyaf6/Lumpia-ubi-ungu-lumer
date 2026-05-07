@@ -1,0 +1,259 @@
+/* ========================================
+   UBI UNGU LUMER - Main Stylesheet
+   ======================================== */
+
+/* ----------------------------------------
+   Base Styles
+   ---------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0a0612;
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------
+   Typography Classes
+   ---------------------------------------- */
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* ----------------------------------------
+   Gradient Backgrounds
+   ---------------------------------------- */
+.hero-gradient {
+    background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 30%, #4a1a6b 60%, #2d1b4e 100%);
+}
+
+.section-gradient {
+    background: linear-gradient(180deg, #0a0612 0%, #1a0a2e 50%, #0a0612 100%);
+}
+
+/* ----------------------------------------
+   Animations
+   ---------------------------------------- */
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes pricePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes blobMove {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(20px, -30px) scale(1.1); }
+    50% { transform: translate(-20px, 20px) scale(0.9); }
+    75% { transform: translate(30px, 10px) scale(1.05); }
+}
+
+@keyframes particleFloat {
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------
+   Floating Elements
+   ---------------------------------------- */
+.float-element {
+    animation: floatUpDown 6s ease-in-out infinite;
+}
+
+/* ----------------------------------------
+   Glow Effects
+   ---------------------------------------- */
+.glow-purple {
+    box-shadow: 0 0 60px rgba(138, 43, 226, 0.4), 0 0 100px rgba(138, 43, 226, 0.2);
+}
+
+.glow-text {
+    text-shadow: 0 0 40px rgba(199, 125, 255, 0.5);
+}
+
+/* ----------------------------------------
+   Button Styles
+   ---------------------------------------- */
+.btn-primary {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(255, 107, 107, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.4);
+}
+
+/* ----------------------------------------
+   Card Styles
+   ---------------------------------------- */
+.card-glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+}
+
+.card-glass:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(138, 43, 226, 0.2);
+}
+
+.testimonial-card {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.05));
+}
+
+/* ----------------------------------------
+   Price Badge
+   ---------------------------------------- */
+.price-badge {
+    background: linear-gradient(135deg, #ffd700, #ffb700);
+    animation: pricePulse 2s ease-in-out infinite;
+}
+
+/* ----------------------------------------
+   Scroll Reveal
+   ---------------------------------------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ----------------------------------------
+   Marquee
+   ---------------------------------------- */
+.marquee {
+    animation: marquee 20s linear infinite;
+}
+
+/* ----------------------------------------
+   Image Hover
+   ---------------------------------------- */
+.img-hover {
+    transition: all 0.5s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* ----------------------------------------
+   Blob Animation
+   ---------------------------------------- */
+.blob {
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: blobMove 10s ease-in-out infinite;
+}
+
+/* ----------------------------------------
+   Particle Effect
+   ---------------------------------------- */
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(199, 125, 255, 0.6);
+    border-radius: 50%;
+    animation: particleFloat 8s ease-in-out infinite;
+}
+
+/* ----------------------------------------
+   Navbar
+   ---------------------------------------- */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(10, 6, 18, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ----------------------------------------
+   Responsive Utilities
+   ---------------------------------------- */
+@media (max-width: 768px) {
+    .hero-gradient {
+        padding-top: 5rem;
+    }
+    
+    .float-element img {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .playfair {
+        font-size: 2.5rem;
+    }
+}
